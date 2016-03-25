@@ -1327,7 +1327,7 @@ module.exports = exports['default'];
 Object.defineProperty(exports, '__esModule', {
   value: true
 });
-var apiURL = 'http://127.0.0.1:8000/api/metra/';
+var apiURL = 'http://api-metra.rhcloud.com/api/metra/';
 
 exports['default'] = {
   getAllLines: function getAllLines() {
