@@ -1,0 +1,182 @@
+@import "partials/_setup"
+
+/* ****************** GENERAL ************** */
+
+html, body
+  background: $light-grey
+
+body
+  color: $black
+  @extend %amble
+  font-size: 15px 
+  letter-spacing: 0.03em
+  padding: 0
+
+a
+  color: $red
+  font-weight: bold
+
+  &:hover, &:focus, &:active
+    color: lighten($red, 10)
+    text-decoration: none
+
+/* ****************** LAYOUT ************** */
+#mainContent
+  padding-bottom: 20px
+  padding-top: 20px
+
+.container
+  max-width: 450px
+  
+select
+  background: transparent
+  border: none
+  font-size: 16px
+  height: 100%
+  padding: 10px 15px
+  position: relative
+  -webkit-appearance: none
+  width: 110%
+  z-index: 5
+
+  &:hover
+    cursor: pointer
+
+.btn
+  background: $blue
+  border: none
+  @include border-radius(0)
+  color: #3f5661
+  display: block
+  font-size: 19px
+  letter-spacing: 0.06em
+  margin: 30px 0 10px
+  padding: 17px 20px
+  text-align: center
+  width: 100%
+
+  &:hover, &:focus, &:active
+    background: darken($blue, 5)
+    color: #3f5661
+
+.btn-default:active:hover, .btn-default:active:focus
+  background: darken($blue, 5)
+  color: #3f5661
+
+
+.buttonDecoration
+  display: inline-block
+  position: relative
+
+  &:before
+    color: #506c7a
+    content: ">"
+    display: inline-block
+    @extend %amble-bold
+    font-size: 25px
+    line-height: .8
+    position: absolute
+    top: 2px
+
+.rightButtonDecoration
+  padding-right: 30px
+
+  &:before
+    right: 0
+
+.leftButtonDecoration
+  padding-left: 30px
+
+/* ****************** HEADER ************** */  
+header, #header
+  background: white
+  padding: 5px 0
+
+  .container
+    position: relative
+
+.brand-style
+  display: block
+  line-height: 5000em
+  overflow: hidden    
+
+#brand
+  display: inline-block
+  font-size: 15px
+  margin: 0
+  min-height: 26px
+  padding: 0
+  text-transform: uppercase
+
+  em
+    font-style: normal
+
+  a
+    background: sprite($general-icons, logo)
+    @extend .brand-style
+    @include sprite-dimensions($general-icons, logo)
+    @include sprite-at2x($general-icons, $general2x-icons)
+    opacity: 1
+
+
+    &:hover, &:focus, &:active
+      opacity: .7
+
+
+#infoButton
+  background: transparent
+  border: 4px solid #a0c5d7
+  @include border-radius(0)
+  display: block
+  height: 29px
+  line-height: 5000em
+  margin: 0
+  opacity: 1
+  overflow: hidden
+  padding: 0
+  position: absolute
+  right: 15px
+  top: 23px
+  @include transition(.6s)
+  width: 29px
+
+  &:hover, &:focus, &:active
+    background: #a0c5d7
+    @include transition(.6s)
+
+    &:before
+      background: sprite($general-icons, info-hover) transparent
+
+  &:before
+    background: sprite($general-icons, info) transparent
+    content: " "
+    display: block
+    @include sprite-dimensions($general-icons, info)
+    @include sprite-at2x($general-icons, $general2x-icons)
+    left: 50%
+    margin: 0
+    margin-left: -(general-sprite-width(info)/2)
+    position: absolute
+    top: 1px
+    z-index: 3
+
+/* ****************** FOOTER ************** */
+footer, #footer
+  font-size: 12px
+  text-align: center
+
+  a
+    color: $black
+    display: inline-block
+    padding: 0 5px
+
+    &:hover, &:focus, &:active
+      color: lighten($black, 20)
+
+/* ****************** SECTIONS ************** */
+
+@import "partials/sections/_home"
+@import "partials/sections/_schedule"
+@import "partials/sections/_about-us"
+
+@import "partials/_responsive"

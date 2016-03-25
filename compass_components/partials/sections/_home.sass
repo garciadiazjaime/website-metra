@@ -1,0 +1,51 @@
+/* ****************** HOME ************** */
+label
+	display: block
+	@extend %amble-bold
+	font-size: 12px
+	font-weight: normal
+	margin: 10px 0 7px
+	max-width: 195px
+	text-transform: uppercase
+
+.selectWrap
+	background: white
+	height: 45px
+	margin: 0 0 10px
+	overflow: hidden
+	position: relative
+	width: 100%
+
+	&:before //arrow
+		background: sprite($general-icons, arrow)
+		content: ""
+		@include sprite-dimensions($general-icons, arrow)
+		@include sprite-at2x($general-icons, $general2x-icons)
+		display: block
+		position: absolute
+		right: 14px
+		top: 18px
+		z-index: 3
+
+	&:after //select square
+		background: $red
+		content: " "
+		display: block
+		height: 34px
+		position: absolute
+		right: 5px
+		top: 5px
+		width: 34px
+		z-index: 1
+
+	option
+		background: white
+
+.stationRow
+	display: inline-block
+	vertical-align: top
+	margin-left: 2%
+	width: 49%
+
+.selectWrap + .stationRow
+	margin-left: 0

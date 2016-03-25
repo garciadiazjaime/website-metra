@@ -1,0 +1,51 @@
+/* ****************** SCHEDULE ************** */
+#scheduleTitle
+  color: #3f5661
+  @extend %amble-bold
+  font-size: 18px
+
+  .small
+    color: #3f5661
+    @extend %amble
+    font-size: 16px
+    display: block
+
+.smallNote
+  color: #828587
+  display: none
+  font-size: 12px
+
+p.smallNote
+  margin: 20px 0 10px
+
+#scheduleTable
+  margin: 0 0 10px
+  padding: 0 15px
+  text-align: center
+  width: 100%
+
+  .smallerText
+    color: $grey
+    font-size: 16px
+
+  .row:nth-child(even)
+    background: #ebebeb
+
+  .col-xs-4, .col-xs-2
+    font-size: 19px
+    padding: 10px 7px
+
+  .row:first-child
+    background: transparent
+
+    .col-xs-4, .col-xs-2
+      color: $red
+      @extend %amble-bold
+      font-size: 15px
+      letter-spacing: 0.08em
+      line-height: 1em
+      text-align: center
+      vertical-align: top
+
+    .smallNote
+      color: #f47d1c

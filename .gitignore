@@ -1,0 +1,12 @@
+*.DS_Store
+*.pyc
+.sass-cache/
+bower_components/
+node_modules/
+npm-debug.log
+assets/static/
+build
+public/*.js
+public/*.css
+coverage
+.ruby-version

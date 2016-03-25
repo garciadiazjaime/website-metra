@@ -1,0 +1,17 @@
+{
+    "esnext": true,
+    "undef": true,
+    "unused": true,
+    "globals": {
+        "console": true,
+        "axios": true,
+        "require": true,
+        "exports": true,
+        "module": true,
+        "strict": true
+    },
+    "maxdepth": 4,
+    "maxparams": 5,
+    "maxstatements": 100,
+    "nonbsp": true
+}
