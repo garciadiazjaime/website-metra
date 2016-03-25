@@ -1,6 +1,6 @@
 {
   "name": "metra",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Metra rail’s app ============== Offers line and route information.",
   "main": "server.js",
   "keywords": [
