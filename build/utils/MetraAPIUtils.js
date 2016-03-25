@@ -3,7 +3,7 @@
 Object.defineProperty(exports, '__esModule', {
   value: true
 });
-var apiURL = 'http://api-metra.rhcloud.com/api/metra/';
+var apiURL = 'https://api-metra.rhcloud.com/api/metra/';
 
 exports['default'] = {
   getAllLines: function getAllLines() {

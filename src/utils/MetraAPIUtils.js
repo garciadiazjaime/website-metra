@@ -1,4 +1,4 @@
-const apiURL = 'http://api-metra.rhcloud.com/api/metra/';
+const apiURL = 'https://api-metra.rhcloud.com/api/metra/';
 
 export default {
   getAllLines() {
